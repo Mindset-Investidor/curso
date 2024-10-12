@@ -4,7 +4,7 @@
     position: relative;
     padding: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 2rem;
     align-items: center;
     background-color: rgba($dark-green, 0.82);
@@ -26,6 +26,7 @@
         width: 50%;
         text-align: justify;
         color: #fff;
+        flex: 1;
 
         :last-child {
             color: #ffffff;
@@ -48,44 +49,6 @@
     }
 
     .chart-container {
-        flex: 1
+        flex: 1;
     }
-}
-
-.texto {
-    width: 45%;
-    text-align: left;
-}
-
-.texto .texto .texto strong {
-    /* Destaque para palavras-chave */
-    color: $mint-2;
-    font-weight: 600;
-}
-
-.texto ul {
-    /* Lista de benefícios */
-    list-style: none; /* Remove marcadores padrão */
-    padding: 0;
-}
-
-.texto li {
-    margin-bottom: 1em;
-    position: relative; /* Para posicionar o ícone */
-    padding-left: 30px; /* Espaço para o ícone */
-}
-
-.texto li::before {
-    /* Ícone de checkmark */
-    content: "\2713";
-    position: absolute;
-    left: 0;
-    top: 5px;
-    color: $celadon-2;
-    font-size: 1.2em;
-}
-
-.texto li strong {
-    /* Destaque nos benefícios */
-    font-weight: 700;
 }

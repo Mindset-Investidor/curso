@@ -68,7 +68,10 @@ export class StatisticsComponent implements OnInit {
               display: false
             },
             ticks: {
-              color: 'white'
+              color: 'white',
+              font: {
+                size: 14
+              }
             },
             position: 'right'
           }
@@ -99,9 +102,13 @@ export class StatisticsComponent implements OnInit {
             display: false
           },
           datalabels: {
+            
             anchor: 'center',
             align: 'center',
-            color: '#FFF'
+            color: '#FFFFFF',
+            formatter(value, context) {
+              return value + "%"
+            },
           }
         },
       }
