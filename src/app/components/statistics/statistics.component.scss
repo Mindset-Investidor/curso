@@ -1,54 +1,58 @@
 @import "../../../styles.scss";
 
 :host {
-    position: relative;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
-    background-color: rgba($dark-green, 0.82);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-    .container-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("https://images.pexels.com/photos/26743057/pexels-photo-26743057/free-photo-of-homem-sombrio-escuro-de-pe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -1;
+section {
+  padding: 5rem 0;
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  background: none;
+
+  .text-container {
+    max-width: 640px;
+    text-align: center;
+    color: $dark-green;
+    flex: 1;
+
+    :last-child {
+      color: $dark-green;
+      font-weight: 600;
     }
 
-    .text-container {
-        width: 50%;
-        text-align: justify;
-        color: #fff;
-        flex: 1;
-
-        :last-child {
-            color: #ffffff;
-            font-weight: 600;
-        }
-
-        h2 {
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            font-weight: 700;
-            color: #ffffff;
-        }
-
-        p {
-            font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 1.5em;
-            color: $nyanza;
-        }
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $dark-green;
     }
 
-    .chart-container {
-        flex: 1;
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1.5em;
+      color: $brunswick-green;
     }
+  }
+
+  .chart-container {
+    flex: 1;
+  }
+
+  img {
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    mask-image: linear-gradient(to right, transparent, black, black, transparent);
+    opacity: 0.2;
+  }
 }

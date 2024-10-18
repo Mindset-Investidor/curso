@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Chart, registerables } from 'chart.js';
+import Chart from 'chart.js/auto';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
-Chart.register(...registerables);
 Chart.register(ChartDataLabels);
 
 @Component({
@@ -13,7 +12,8 @@ Chart.register(ChartDataLabels);
   styleUrl: './statistics.component.scss'
 })
 export class StatisticsComponent implements OnInit {
-  public chart: any;
+  public chart: any = [];
+  private data: Array<number> = [78.5, 29.2, 17.8, 4];
 
   ngOnInit(): void {
     this.createChart();
@@ -21,30 +21,28 @@ export class StatisticsComponent implements OnInit {
 
   createChart() {
     this.chart = new Chart("MyChart", {
+      plugins: [ChartDataLabels],
       type: 'bar',
       data: {
         labels: [
           'Famílias Endividadas (CNC)',
           'Famílias com Dívidas em Atraso (CNC)',
           'Taxa de Poupança (IBGE)',
-          'Inflação acumulado de 12 meses (IBGE)'
+          'Inflação em 12 meses (IBGE)'
         ],
-        datasets: [{
-          data: [78.5, 29.2, 17.8, 4, 42],
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.6)',
-            'rgba(255, 159, 64, 0.6)',
-            'rgba(75, 192, 192, 0.6)',
-            'rgba(54, 162, 235, 0.6)'
-          ],
-          borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(255, 159, 64, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(54, 162, 235, 1)'
-          ],
-          borderWidth: 2
-        }]
+        datasets: [
+          {
+            data: this.data,
+            backgroundColor: [
+              '#dc3545',
+              '#ffc107',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(54, 162, 235, 0.6)'
+            ],
+            borderRadius: 5,
+            borderWidth: 0
+          }
+        ]
       },
       options:
       {
@@ -55,7 +53,7 @@ export class StatisticsComponent implements OnInit {
               display: false
             },
             ticks: {
-              display: false
+              display: false,
             },
             border: {
               display: false
@@ -68,9 +66,10 @@ export class StatisticsComponent implements OnInit {
               display: false
             },
             ticks: {
-              color: 'white',
+              color: '#081c15ff',
               font: {
-                size: 14
+                size: 14,
+                weight: 'normal'
               }
             },
             position: 'right'
@@ -79,8 +78,8 @@ export class StatisticsComponent implements OnInit {
         plugins: {
           title: {
             display: true,
-            color: '#FFFFFF',
-            font: { size: 14 },
+            color: '#081c15ff',
+            font: { size: 18 },
             text: 'Situação Financeira no Brasil (2023)'
           },
           tooltip: {
@@ -96,16 +95,21 @@ export class StatisticsComponent implements OnInit {
                 }
                 return label;
               }
-            }
+            },
           },
           legend: {
             display: false
           },
           datalabels: {
-            
             anchor: 'center',
             align: 'center',
-            color: '#FFFFFF',
+            color: '#081c15',
+            font: {
+              weight: 'bold',
+              size: 16
+            },
+            backgroundColor: "#FFFFFF",
+            borderRadius: 5,
             formatter(value, context) {
               return value + "%"
             },

@@ -1,12 +1,12 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Aplicando a fonte Montserrat */
 body {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* SCSS HEX */
@@ -21,110 +21,4 @@ $brunswick-green: #1b4332ff;
 $dark-green: #081c15ff;
 
 /* SCSS Gradient */
-$gradient-top: linear-gradient(
-    0deg,
-    #d8f3dcff,
-    #b7e4c7ff,
-    #95d5b2ff,
-    #74c69dff,
-    #52b788ff,
-    #40916cff,
-    #2d6a4fff,
-    #1b4332ff,
-    #081c15ff
-);
-$gradient-right: linear-gradient(
-    90deg,
-    #d8f3dcff,
-    #b7e4c7ff,
-    #95d5b2ff,
-    #74c69dff,
-    #52b788ff,
-    #40916cff,
-    #2d6a4fff,
-    #1b4332ff,
-    #081c15ff
-);
-$gradient-bottom: linear-gradient(
-    180deg,
-    #d8f3dcff,
-    #b7e4c7ff,
-    #95d5b2ff,
-    #74c69dff,
-    #52b788ff,
-    #40916cff,
-    #2d6a4fff,
-    #1b4332ff,
-    #081c15ff
-);
-$gradient-left: linear-gradient(
-    270deg,
-    #d8f3dcff,
-    #b7e4c7ff,
-    #95d5b2ff,
-    #74c69dff,
-    #52b788ff,
-    #40916cff,
-    #2d6a4fff,
-    #1b4332ff,
-    #081c15ff
-);
-$gradient-top-right: linear-gradient(
-    45deg,
-    #d8f3dcff,
-    #b7e4c7ff,
-    #95d5b2ff,
-    #74c69dff,
-    #52b788ff,
-    #40916cff,
-    #2d6a4fff,
-    #1b4332ff,
-    #081c15ff
-);
-$gradient-bottom-right: linear-gradient(
-    135deg,
-    #d8f3dcff,
-    #b7e4c7ff,
-    #95d5b2ff,
-    #74c69dff,
-    #52b788ff,
-    #40916cff,
-    #2d6a4fff,
-    #1b4332ff,
-    #081c15ff
-);
-$gradient-top-left: linear-gradient(
-    225deg,
-    #d8f3dcff,
-    #b7e4c7ff,
-    #95d5b2ff,
-    #74c69dff,
-    #52b788ff,
-    #40916cff,
-    #2d6a4fff,
-    #1b4332ff,
-    #081c15ff
-);
-$gradient-bottom-left: linear-gradient(
-    315deg,
-    #d8f3dcff,
-    #b7e4c7ff,
-    #95d5b2ff,
-    #74c69dff,
-    #52b788ff,
-    #40916cff,
-    #2d6a4fff,
-    #1b4332ff,
-    #081c15ff
-);
-$gradient-radial: radial-gradient(
-    #d8f3dcff,
-    #b7e4c7ff,
-    #95d5b2ff,
-    #74c69dff,
-    #52b788ff,
-    #40916cff,
-    #2d6a4fff,
-    #1b4332ff,
-    #081c15ff
-);
+$gradient-top: linear-gradient(180deg, #2d6a4fff, #40916cff, #52b788ff, #40916cff, #2d6a4fff);
