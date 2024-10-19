@@ -35,7 +35,9 @@ section {
     .photo {
       position: absolute;
       bottom: 0;
-      left: 50%;
+      right: 30%;
+      filter: sepia(50%);
+      opacity: 0.9;
     }
   }
 }
