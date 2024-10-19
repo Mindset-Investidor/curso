@@ -1,1 +1,12 @@
-<p>extra-content works!</p>
+<section>
+  <h2>Te ajudamos na <i>sua jornada</i> rumo à <strong>Independência Financeira</strong></h2>
+  <ul class="cards-container">
+    @for (card of cards; track $index) {
+      <app-extra-content-card
+        [imgSrc]="card.imgSrc"
+        [title]="card.title"
+        [description]="card.description"
+      ></app-extra-content-card>
+    }
+  </ul>
+</section>

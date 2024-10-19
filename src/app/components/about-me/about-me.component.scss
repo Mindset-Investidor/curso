@@ -1,42 +1,46 @@
 @import "../../../styles.scss";
 
 :host {
-    margin: 4rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+}
 
-    & > * {
-        width: 30%;
+section {
+  max-width: 1200px;
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  .profile-name {
+    width: max-content;
+
+    h3 {
+      margin-bottom: 1rem;
+      padding: 0.2rem 0.8rem 0.2rem 0.5rem;
+      width: max-content;
+      background: $brunswick-green;
+      color: white;
+      font-weight: 500;
+      border-radius: 0 1rem 1rem 0;
     }
 
-    .profile-name {
-        width: max-content;
-
-        h3 {
-            margin-bottom: 1rem;
-            padding: 0.2rem 0.5rem;
-            width: max-content;
-            background: $brunswick-green;
-            color: white;
-            font-weight: 500;
-            border-radius: 0.2rem;
-        }
-
-        h1 {
-            width: max-content;
-            color: $dark-green;
-        }
+    h1 {
+      width: max-content;
+      color: $dark-green;
     }
+  }
 
-    img {
-        max-width: 150px;
-        width: 100%;
-        border-radius: 100%;
-    }
+  img {
+    max-width: 150px;
+    width: 100%;
+    border-radius: 100%;
+  }
 
-    p {
-        color: $brunswick-green;
-    }
+  p {
+    font-size: 1rem;
+    color: $brunswick-green;
+    text-align: justify;
+  }
 }
