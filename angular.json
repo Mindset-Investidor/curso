@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/mindset-investidor",
-            "baseHref": "/landing-page/",
+            "baseHref": "/curso/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
