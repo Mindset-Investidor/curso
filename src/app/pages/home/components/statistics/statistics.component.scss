@@ -1,10 +1,12 @@
 @import "../../../../../styles.scss";
 
 :host {
+  z-index: 0;
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
+  background: $nyanza;
 }
 
 section {

@@ -2,7 +2,7 @@
 
 :host {
   width: 100%;
-  background: $dark-green;
+  background: linear-gradient(180deg, $dark-green, rgb(16, 52, 39));
   display: flex;
   justify-content: center;
 }
@@ -21,6 +21,12 @@ section {
     text-align: center;
     display: flex;
     align-items: center;
+    p {
+      text-shadow: 2px 5px 5px rgba(0, 0, 0, 1);
+    }
+    strong {
+      color: $mint;
+    }
   }
 
   .photo-container {

@@ -3,6 +3,7 @@
 :host {
   display: flex;
   justify-content: center;
+  background: $dark-green;
 }
 
 section {
@@ -14,21 +15,24 @@ section {
   gap: 2rem;
 
   .profile-name {
-    width: max-content;
+    // width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 
     h3 {
-      margin-bottom: 1rem;
+      width: 100%;
       padding: 0.2rem 0.8rem 0.2rem 0.5rem;
-      width: max-content;
-      background: $brunswick-green;
-      color: white;
-      font-weight: 500;
-      border-radius: 0 1rem 1rem 0;
+      background: $mint-2;
+      color: $dark-green;
+      font-weight: 600;
+      border-radius: 0 0 0.5rem 0;
+      flex: 2;
     }
 
     h1 {
       width: max-content;
-      color: $dark-green;
+      color: #fff;
     }
   }
 
@@ -40,7 +44,7 @@ section {
 
   p {
     font-size: 1rem;
-    color: $brunswick-green;
+    color: #fff;
     text-align: justify;
   }
 }
