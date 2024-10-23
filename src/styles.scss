@@ -4,12 +4,10 @@
   padding: 0;
 }
 
-/* Aplicando a fonte Montserrat */
 body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* SCSS HEX */
 $nyanza: #d8f3dcff;
 $celadon: #b7e4c7ff;
 $celadon-2: #95d5b2ff;
@@ -20,15 +18,12 @@ $dartmouth-green: #2d6a4fff;
 $brunswick-green: #1b4332ff;
 $dark-green: #081c15ff;
 
-/* SCSS Gradient */
-$dark-gradient: linear-gradient(180deg, $dartmouth-green, $brunswick-green);
-$medium-gradient: linear-gradient(180deg, $sea-green, $dartmouth-green);
-
 ul {
   list-style: none;
 }
 
-button {
+a {
   cursor: pointer;
-  border: none;
+  text-decoration: none;
+  color: white;
 }
