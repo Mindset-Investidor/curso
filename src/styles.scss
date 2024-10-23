@@ -21,8 +21,14 @@ $brunswick-green: #1b4332ff;
 $dark-green: #081c15ff;
 
 /* SCSS Gradient */
-$gradient-top: linear-gradient(180deg, #2d6a4fff, #40916cff, #52b788ff, #40916cff, #2d6a4fff);
+$dark-gradient: linear-gradient(180deg, $dartmouth-green, $brunswick-green);
+$medium-gradient: linear-gradient(180deg, $sea-green, $dartmouth-green);
 
 ul {
   list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
 }

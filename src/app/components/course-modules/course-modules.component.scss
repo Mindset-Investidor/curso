@@ -1,19 +1,20 @@
 @import "../../../styles.scss";
 
 :host {
-  padding: 2rem 0;
-  background: $brunswick-green;
+  position: relative;
+  padding: 4rem 0;
+  background: $nyanza;
   display: flex;
   justify-content: center;
 }
 
 section {
-  padding: 0 1rem;
+  padding: 0 2rem;
   max-width: 1200px;
   display: flex;
   align-items: center;
   gap: 2rem;
-  color: #FFF;
+  color: $dark-green;
   h2 {
     flex: 2;
     font-weight: 100;

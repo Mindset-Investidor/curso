@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ModuleCardComponent } from './module-card/module-card.component';
+import { SubscribeButtonComponent } from '../subscribe-button/subscribe-button.component';
 
 @Component({
   selector: 'app-course-modules',
   standalone: true,
-  imports: [ModuleCardComponent],
+  imports: [ModuleCardComponent, SubscribeButtonComponent],
   templateUrl: './course-modules.component.html',
   styleUrl: './course-modules.component.scss'
 })

@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import Chart from 'chart.js/auto';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { SubscribeButtonComponent } from '../subscribe-button/subscribe-button.component';
 
 Chart.register(ChartDataLabels);
 
 @Component({
   selector: 'app-statistics',
   standalone: true,
-  imports: [],
+  imports: [SubscribeButtonComponent],
   templateUrl: './statistics.component.html',
   styleUrl: './statistics.component.scss'
 })
