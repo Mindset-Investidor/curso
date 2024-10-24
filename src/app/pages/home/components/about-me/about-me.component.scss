@@ -8,14 +8,13 @@
 
 section {
   max-width: 1200px;
-  margin: 4rem 0;
+  margin: 4rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 
   .profile-name {
-    // width: auto;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
