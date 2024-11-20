@@ -1,13 +1,14 @@
 @import "../../../../../styles.scss";
 
 a {
+  cursor: pointer;
   position: absolute;
   top: -2rem;
   left: 50%;
   margin-left: auto;
   transform: translateX(-50%);
 
-  padding: 0.8rem 1.6rem;
+  padding: 0.5rem 1.6rem;
   background: $dartmouth-green;
   color: #fff;
   user-select: none;
@@ -17,6 +18,14 @@ a {
   font-weight: 500;
 
   transition: 0.1s;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    max-height: 40px;
+  }
 
   &:hover {
     background: $brunswick-green;
