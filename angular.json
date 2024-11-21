@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mindset-investidor": {
+    "curso": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/curso",
             "index": "src/index.html",
             "main": "src/main.ts",
             "baseHref": "/curso/",
@@ -25,6 +25,7 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
+            "aot": true,
             "inlineStyleLanguage": "scss",
             "assets": [
               {

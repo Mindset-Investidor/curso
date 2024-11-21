@@ -7,11 +7,7 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: "curso",
-    component: HomeComponent
+    path: "**",
+    redirectTo: ""
   },
-  // {
-  //   path: "landing",
-  //   component: LandingComponent
-  // }
 ];
