@@ -1,38 +1,50 @@
 @import "../../../../../styles.scss";
 
-a {
-  cursor: pointer;
-  position: absolute;
-  top: -2rem;
-  left: 50%;
-  margin-left: auto;
-  transform: translateX(-50%);
-
-  padding: 0.5rem 1.6rem;
-  background: $dartmouth-green;
-  color: #fff;
-  user-select: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 1.6rem;
-  font-size: 1.4rem;
-  font-weight: 500;
-
-  transition: 0.1s;
-
+:host {
+  z-index: 10;
+  position: fixed;
+  bottom: 1rem;
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  justify-content: center;
 
-  img {
-    max-height: 40px;
-  }
-
-  &:hover {
-    background: $brunswick-green;
-    scale: 1.1;
-  }
-
-  &:active {
+  a {
+    width: max-content;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
     background: $dartmouth-green;
+    color: #fff;
+    user-select: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 5rem;
+    transition: 0.1s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      max-height: 40px;
+    }
+
+    &:hover {
+      background: $brunswick-green;
+    }
+
+    &:active {
+      background: $dartmouth-green;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  :host {
+    a {
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+    }
   }
 }

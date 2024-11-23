@@ -1,0 +1,18 @@
+@for (bar of bars; track bar.label) {
+<li>
+    <div class="label">{{ bar.label }}</div>
+    <div class="value">
+        <div 
+            [style.background]="getBarColor(bar.value)" 
+            [style.width.%]="bar.value"
+        >
+            @if (bar.value >= 40) {
+                {{bar.value}} %
+            }
+        </div>
+        @if (bar.value < 40) {
+            {{bar.value}} %
+        }
+    </div>
+</li>
+}

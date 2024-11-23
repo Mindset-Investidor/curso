@@ -5,6 +5,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { ExtraContentComponent } from './components/extra-content/extra-content.component';
 import { CourseModulesComponent } from './components/course-modules/course-modules.component';
+import { SubscribeButtonComponent } from './components/subscribe-button/subscribe-button.component';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,8 @@ import { CourseModulesComponent } from './components/course-modules/course-modul
     AboutMeComponent,
     HeroComponent,
     ExtraContentComponent,
-    CourseModulesComponent
+    CourseModulesComponent,
+    SubscribeButtonComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

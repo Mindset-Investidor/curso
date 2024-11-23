@@ -26,7 +26,7 @@ export class ExtraContentComponent {
       description: `Após cada módulo, teremos um <strong>encontro online ao vivo</strong> para tirar dúvidas sobre os pontos abordados nas aulas. Os encontros serão gravados para você rever quando quiser.`
     },
     {
-      imgSrc: "assets/images/extra-contents/studying.png",
+      imgSrc: "assets/images/extra-contents/studying.jpg",
       title: "Acesso ilimitado por 6 meses",
       description: `Você terá acesso <strong>ilimitado ao Curso Formação do Mindset Investidor<strong> a partir da data de inscrição. Todas as aulas poderão ser vistas e revistas quando quiser.`
     },
