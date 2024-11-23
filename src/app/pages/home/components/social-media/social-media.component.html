@@ -1,0 +1,9 @@
+😉 ME SIGA NAS REDES SOCIAIS 
+
+@for (item of socialMedia; track item.url) {
+    <li>
+        <a [href]="item.url" target="_blank">
+            <img [src]="item.imgSrc" [alt]="item.alt">
+        </a>
+    </li>
+}

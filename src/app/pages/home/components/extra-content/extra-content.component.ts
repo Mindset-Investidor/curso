@@ -23,7 +23,8 @@ export class ExtraContentComponent {
     {
       imgSrc: "assets/images/extra-contents/video-conference.jpg",
       title: "Aulas Tira Dúvidas Ao Vivo",
-      description: `Após cada módulo, teremos um <strong>encontro online ao vivo</strong> para tirar dúvidas sobre os pontos abordados nas aulas. Os encontros serão gravados para você rever quando quiser.`
+      description: `Teremos <strong>encontros online ao vivo</strong> para tirar dúvidas sobre os pontos abordados nas aulas. Os encontros serão gravados para você rever
+      quando quiser.`
     },
     {
       imgSrc: "assets/images/extra-contents/studying.jpg",

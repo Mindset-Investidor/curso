@@ -1,0 +1,30 @@
+:host {
+    padding: 1rem 0;
+    font-size: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    li {
+        list-style: none;
+
+        a {
+            img {
+                max-width: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    :host {
+        li {
+            a {
+                img {
+                    max-width: 60px;
+                }
+            }
+        }
+    }
+}

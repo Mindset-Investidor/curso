@@ -6,6 +6,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ExtraContentComponent } from './components/extra-content/extra-content.component';
 import { CourseModulesComponent } from './components/course-modules/course-modules.component';
 import { SubscribeButtonComponent } from './components/subscribe-button/subscribe-button.component';
+import { SocialMediaComponent } from "./components/social-media/social-media.component";
 
 @Component({
   selector: 'app-home',
@@ -17,8 +18,9 @@ import { SubscribeButtonComponent } from './components/subscribe-button/subscrib
     HeroComponent,
     ExtraContentComponent,
     CourseModulesComponent,
-    SubscribeButtonComponent
-  ],
+    SubscribeButtonComponent,
+    SocialMediaComponent
+],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
