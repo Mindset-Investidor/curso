@@ -7,12 +7,12 @@
 }
 
 section {
-  max-width: 1200px;
-  margin: 4rem 3rem;
+  margin: 2rem 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 
   .profile-name {
     display: flex;
@@ -45,5 +45,13 @@ section {
     font-size: 1rem;
     color: #fff;
     text-align: justify;
+  }
+}
+
+@media (min-width: 900px) {
+  section {
+    max-width: 1200px;
+    margin: 3rem 2rem;
+    flex-direction: row;
   }
 }
