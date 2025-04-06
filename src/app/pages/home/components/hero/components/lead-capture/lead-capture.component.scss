@@ -1,0 +1,60 @@
+.lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+
+  &__row {
+    display: flex;
+    gap: 1rem;
+
+    .lead-form__field {
+      flex: 1;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
+    input,
+    select {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+
+      &:focus {
+        border-color: #0070f3;
+        outline: none;
+      }
+    }
+  }
+
+  &__submit {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #005dc1;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}

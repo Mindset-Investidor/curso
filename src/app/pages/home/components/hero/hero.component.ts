@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { LeadCaptureComponent } from './components/lead-capture/lead-capture.component';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [],
+  imports: [LeadCaptureComponent],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss'
+  styleUrl: './hero.component.scss',
 })
-export class HeroComponent {
-
-}
+export class HeroComponent {}

@@ -1,0 +1,39 @@
+<form [formGroup]="leadForm" (ngSubmit)="onSubmit()" class="lead-form">
+  <div class="lead-form__row">
+    <div class="lead-form__field">
+      <label>Nome *</label>
+      <input type="text" formControlName="name" />
+    </div>
+
+    <div class="lead-form__field">
+      <label>Email *</label>
+      <input type="email" formControlName="email" />
+    </div>
+  </div>
+
+  <div class="lead-form__row">
+    <div class="lead-form__field">
+      <label>Telefone *</label>
+      <input
+        type="text"
+        formControlName="phone"
+        mask="(00) 00000-0000"
+        placeholder="(00) 00000-0000"
+      />
+    </div>
+
+    <div class="lead-form__field">
+      <label>Como nos conheceu? *</label>
+      <select formControlName="source">
+        <option value="" disabled>Selecione</option>
+        @for (src of sources; track $index) {
+        <option [value]="src">{{ src }}</option>
+        }
+      </select>
+    </div>
+  </div>
+
+  <button class="lead-form__submit" [disabled]="!leadForm.valid" type="submit">
+    QUERO ENTRAR NA LISTA VIP
+  </button>
+</form>
