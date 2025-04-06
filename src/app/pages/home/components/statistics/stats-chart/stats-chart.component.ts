@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-stats-chart',
   standalone: true,
@@ -11,7 +10,11 @@ import { Component } from '@angular/core';
 export class StatsChartComponent {
   bars = [
     { label: 'Famílias Endividadas (CNC)', value: 78.5, animatedWidth: 0 },
-    { label: 'Famílias com Dívidas em Atraso (CNC)', value: 29.2, animatedWidth: 0 },
+    {
+      label: 'Famílias com Dívidas em Atraso (CNC)',
+      value: 29.2,
+      animatedWidth: 0,
+    },
     { label: 'Taxa de Poupança (IBGE)', value: 17.8, animatedWidth: 0 },
     { label: 'Inflação em 12 meses (IBGE)', value: 4, animatedWidth: 0 },
   ];
@@ -29,7 +32,11 @@ export class StatsChartComponent {
   interpolateColor(color1: string, color2: string, factor: number): string {
     const hexToRgb = (hex: string) => {
       const bigint = parseInt(hex.replace('#', ''), 16);
-      return { r: (bigint >> 16) & 255, g: (bigint >> 8) & 255, b: bigint & 255 };
+      return {
+        r: (bigint >> 16) & 255,
+        g: (bigint >> 8) & 255,
+        b: bigint & 255,
+      };
     };
 
     const rgbToHex = ({ r, g, b }: { r: number; g: number; b: number }) =>
