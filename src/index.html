@@ -1,17 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>MindsetInvestidor</title>
+    <base href="/curso/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>MindsetInvestidor</title>
-  <base href="/curso/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="favicon.svg">
-</head>
-
-<body>
-  <app-root></app-root>
-</body>
-
+  <body>
+    <app-root></app-root>
+    <form name="lead" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="phone" />
+      <input type="text" name="source" />
+    </form>
+  </body>
 </html>
