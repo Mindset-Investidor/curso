@@ -29,6 +29,31 @@ export class LeadCaptureComponent {
   });
 
   onSubmit() {
+    if (this.leadForm.invalid) return;
+
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = '/'; // mesma página
+    form.setAttribute('data-netlify', 'true');
+    form.style.display = 'none';
+
+    const formName = document.createElement('input');
+    formName.name = 'form-name';
+    formName.value = 'lead';
+    formName.type = 'hidden';
+    form.appendChild(formName);
+
+    Object.entries(this.leadForm.value).forEach(([key, value]) => {
+      const input = document.createElement('input');
+      input.name = key;
+      input.value = value as string;
+      input.type = 'hidden';
+      form.appendChild(input);
+    });
+
+    document.body.appendChild(form);
+    form.submit();
+
     this.leadForm.reset();
     // this.leadForm.disable();
     alert('👏 Parabéns pela inscrição! Conte conosco nesta jornada!');

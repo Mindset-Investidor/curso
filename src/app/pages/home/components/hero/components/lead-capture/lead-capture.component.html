@@ -1,12 +1,13 @@
 <form
   name="lead"
+  method="post"
   netlify
   netlify-honeypot="bot-field"
   [formGroup]="leadForm"
   (ngSubmit)="onSubmit()"
   class="lead-form"
 >
-  <input type="hidden" name="form-name" value="lead" />
+  <input type="hidden" id="name" name="form-name" value="lead" />
   <input type="hidden" name="bot-field" />
 
   <div class="lead-form__row">
@@ -47,4 +48,12 @@
   <button class="lead-form__submit" [disabled]="!leadForm.valid" type="submit">
     QUERO ENTRAR NA LISTA VIP
   </button>
+</form>
+
+<form name="lead" netlify netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="lead" />
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="text" name="phone" />
+  <input type="text" name="source" />
 </form>
