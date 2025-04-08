@@ -11,12 +11,12 @@ import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
   styleUrl: './lead-capture.component.scss',
 })
 export class LeadCaptureComponent {
-  sources = ['Palestra', 'Indicação', 'Instagram', 'LinkedIn'];
+  sources = ['Palestra', 'Indicação', 'Instagram', 'LinkedIn', 'Outro'];
 
   private fb = inject(FormBuilder);
 
   leadForm = this.fb.group({
-    name: ['', Validators.required],
+    name: ['', [Validators.required, Validators.minLength(3)]],
     email: ['', [Validators.required, Validators.email]],
     phone: [
       '',
