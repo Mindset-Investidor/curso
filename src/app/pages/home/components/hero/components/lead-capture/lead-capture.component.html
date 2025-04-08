@@ -1,13 +1,13 @@
-<form [formGroup]="leadForm" (ngSubmit)="onSubmit()" class="lead-form">
+<form [formGroup]="leadForm" (ngSubmit)="onSubmit()" class="lead-form" netlify>
   <div class="lead-form__row">
     <div class="lead-form__field">
       <label>Nome *</label>
-      <input type="text" formControlName="name" />
+      <input type="text" formControlName="name" name="name" />
     </div>
 
     <div class="lead-form__field">
       <label>Email *</label>
-      <input type="email" formControlName="email" />
+      <input type="email" formControlName="email" name="email" />
     </div>
   </div>
 
@@ -17,6 +17,7 @@
       <input
         type="text"
         formControlName="phone"
+        name="phone"
         mask="(00) 00000-0000"
         placeholder="(00) 00000-0000"
       />
@@ -24,7 +25,7 @@
 
     <div class="lead-form__field">
       <label>Como nos conheceu? *</label>
-      <select formControlName="source">
+      <select formControlName="source" name="source">
         <option value="" disabled>Selecione</option>
         @for (src of sources; track $index) {
         <option [value]="src">{{ src }}</option>

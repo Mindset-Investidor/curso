@@ -29,10 +29,8 @@ export class LeadCaptureComponent {
   });
 
   onSubmit() {
-    if (this.leadForm.valid) {
-      console.log(this.leadForm.value);
-    } else {
-      this.leadForm.markAllAsTouched();
-    }
+    this.leadForm.reset();
+    this.leadForm.disable();
+    alert('👏 Parabéns pela inscrição! Conte conosco nesta jornada!');
   }
 }
