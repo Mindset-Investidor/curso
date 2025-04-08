@@ -58,3 +58,11 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .lead-form {
+    &__row {
+      flex-direction: column;
+    }
+  }
+}
