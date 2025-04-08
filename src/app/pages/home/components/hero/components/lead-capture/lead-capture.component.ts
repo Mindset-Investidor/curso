@@ -30,7 +30,7 @@ export class LeadCaptureComponent {
 
   onSubmit() {
     this.leadForm.reset();
-    this.leadForm.disable();
+    // this.leadForm.disable();
     alert('👏 Parabéns pela inscrição! Conte conosco nesta jornada!');
   }
 }

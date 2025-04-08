@@ -1,4 +1,14 @@
-<form [formGroup]="leadForm" (ngSubmit)="onSubmit()" class="lead-form" netlify>
+<form
+  name="lead"
+  netlify
+  netlify-honeypot="bot-field"
+  [formGroup]="leadForm"
+  (ngSubmit)="onSubmit()"
+  class="lead-form"
+>
+  <input type="hidden" name="form-name" value="lead" />
+  <input type="hidden" name="bot-field" />
+
   <div class="lead-form__row">
     <div class="lead-form__field">
       <label>Nome *</label>
