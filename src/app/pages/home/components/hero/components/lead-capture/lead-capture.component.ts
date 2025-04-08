@@ -39,13 +39,10 @@ export class LeadCaptureComponent {
         ...(this.leadForm.value as Record<string, string>),
       }).toString(),
     })
-      .then(() =>
-        alert('👏 Parabéns pela inscrição! Conte conosco nesta jornada!')
-      )
+      .then(() => {
+        alert('👏 Parabéns pela inscrição! Conte conosco nesta jornada!');
+        this.leadForm.reset();
+      })
       .catch(() => alert('Erro ao enviar. Tente novamente.'));
-
-    this.leadForm.reset();
-    // this.leadForm.disable();
-    alert('👏 Parabéns pela inscrição! Conte conosco nesta jornada!');
   }
 }
